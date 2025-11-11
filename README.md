@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <h2>¡Tranquilo@! Todos empezamos sin saber nada </h2>
+  <h2>¡Tranquilo@! Todos empezamos sin saber nada, vamos grupo de Personerá de Bogotá</h2>
   <p><strong>Esta guía es tu salvavidas antes de sumergirte en los datos</strong></p>
 </div>
 
