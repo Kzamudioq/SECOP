@@ -1,4 +1,8 @@
-# Antes de Empezar: Tu Guía de Supervivencia
+
+
+<div align="center">
+  <h2> # Antes de Empezar: Tu Guía de Supervivencia </h2>
+</div>
 
 <div align="center">
   <h2>¡Tranquilo/a! Todos empezamos sin saber nada </h2>
