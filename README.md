@@ -1,7 +1,7 @@
-# 🌱 Antes de Empezar: Tu Guía de Supervivencia
+# Antes de Empezar: Tu Guía de Supervivencia
 
 <div align="center">
-  <h2>🎯 ¡Tranquilo/a! Todos empezamos sin saber nada 🎯</h2>
+  <h2>¡Tranquilo/a! Todos empezamos sin saber nada </h2>
   <p><strong>Esta guía es tu salvavidas antes de sumergirte en los datos</strong></p>
 </div>
 
