@@ -13,13 +13,13 @@
 
 ### ¡SÍ! Y te voy a explicar por qué:
 
-#### 🎮 **Piensa en esto como un videojuego:**
+#### **Piensa en esto como un videojuego:**
 - **Nivel 1:** Aprendes los controles básicos (Python básico)
 - **Nivel 2:** Exploras el mundo (cargar y ver datos)
 - **Nivel 3:** Usas herramientas mágicas (crear gráficos)
 - **Nivel 4:** Luchas contra el jefe final (análisis avanzado + IA)
 
-#### 🏗️ **O como construir con LEGO:**
+####  **O como construir con LEGO:**
 - No necesitas inventar los bloques (usamos librerías ya hechas)
 - Solo necesitas saber cómo encajan (lo vas a aprender aquí)
 - Al final, tienes algo increíble (¡tu análisis de datos!)
@@ -30,17 +30,17 @@
 
 <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 25px; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div align="center">
-    <h3 style="color: #1565c0; margin-bottom: 8px;">🔤 Tu Mini-Diccionario Antes de Empezar</h3>
+    <h3 style="color: #1565c0; margin-bottom: 8px;">Tu Mini-Diccionario Antes de Empezar</h3>
     <p style="color: #1976d2; font-style: italic; margin-bottom: 20px;"><em>¡No te asustes por estas palabras! En 10 minutos las vas a entender perfectamente</em></p>
   </div>
 
   <table style="width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-collapse: collapse;">
     <thead>
       <tr style="background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%); color: white;">
-        <th style="padding: 15px; text-align: left; font-weight: bold;">🎯 Palabra</th>
-        <th style="padding: 15px; text-align: left; font-weight: bold;">🤔 ¿Qué es?</th>
-        <th style="padding: 15px; text-align: left; font-weight: bold;">🎉 Ejemplo simple</th>
-        <th style="padding: 15px; text-align: center; font-weight: bold;">💡 Nivel</th>
+        <th style="padding: 15px; text-align: left; font-weight: bold;">Palabra</th>
+        <th style="padding: 15px; text-align: left; font-weight: bold;">¿Qué es?</th>
+        <th style="padding: 15px; text-align: left; font-weight: bold;">Ejemplo simple</th>
+        <th style="padding: 15px; text-align: center; font-weight: bold;">Nivel</th>
       </tr>
     </thead>
     <tbody>
@@ -105,7 +105,7 @@
 
 ## 💻 **¿Qué necesito en mi computadora?**
 
-### 🎉 **¡La respuesta corta: NADA!**
+### **¡La respuesta corta: NADA!**
 
 <div align="center">
 
@@ -117,11 +117,11 @@
 
 </div>
 
-### 🎯 **TU MISIÓN: Ser un Data Scientist en 5 minutos**
+### **TU MISIÓN: Ser un Data Scientist en 5 minutos**
 
 <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); padding: 20px; border-radius: 15px; margin: 15px 0; border-left: 5px solid #9c27b0;">
 
-#### ⏱️ **CRONÓMETRO DE LA AVENTURA**
+#### **CRONÓMETRO DE LA AVENTURA**
 ```
 ⏰ MINUTO 1: ✅ Verificar cuenta Google
 ⏰ MINUTO 2: 🌐 Abrir Google Colab  
@@ -136,7 +136,7 @@
 
 <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 
-| ✅ | 🎯 **Requisito** | 📝 **Descripción** | 🔗 **Acción Inmediata** | ⏱️ **Tiempo** |
+| ✅ | **Requisito** | **Descripción** | **Acción Inmediata** | **Tiempo** |
 |---|---|---|---|---|
 | ⬜ | 🌐 **Cuenta Google** | Necesaria para Google Colab | [📧 Verificar/Crear](https://accounts.google.com) | 30 seg |
 | ⬜ | 🌍 **Navegador Actualizado** | Chrome, Firefox, Safari o Edge | [🔍 Verificar versión](https://www.whatsmybrowser.org/) | 15 seg |
@@ -151,7 +151,9 @@
 **Progreso en Tiempo Real:** 
 ```
 [ ████░░░░░░ ] 0/5 completado - ¡Empezando la aventura!
+
 [ ██████░░░░ ] 3/5 completado - ¡Vas genial!
+
 [ ██████████ ] 5/5 completado - ¡LISTO PARA DESPEGAR! 🚀
 ```
 
@@ -159,7 +161,7 @@
 
 </div>
 
-### 🔥 **VERIFICACIÓN RÁPIDA - ¿Todo listo?**
+### **VERIFICACIÓN RÁPIDA - ¿Todo listo?**
 
 <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); padding: 15px; border-radius: 10px; margin: 15px 0;">
 
@@ -168,7 +170,7 @@
 ✅ **Abrir** [Google Colab](https://colab.research.google.com) sin problemas  
 ✅ **Iniciar sesión** con tu cuenta de Google  
 ✅ **Ver** la interfaz principal de Colab (debería verse como un cuaderno)  
-✅ **Sentirte** emocionado/a por lo que viene 😄
+✅ **Sentirte** emocionado/a por lo que viene 
 
 **Si alguno falla:** ¡No te preocupes! Revisa el paso correspondiente arriba.
 
@@ -180,7 +182,7 @@
 
 <div align="center" style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); padding: 30px; border-radius: 20px; margin: 25px 0;">
 
-### 🎊 **¡FELICIDADES! Oficialmente estás listo para tu primera misión de datos**
+### **¡FELICIDADES! Oficialmente estás listo para tu primera misión de datos**
 
 ![Cohete](https://img.shields.io/badge/🚀%20Estado-LISTO%20PARA%20DESPEGAR-brightgreen?style=for-the-badge&logo=rocket)
 ![Nivel](https://img.shields.io/badge/💪%20Nivel-DATA%20ROOKIE-blue?style=for-the-badge&logo=trending-up)
@@ -188,13 +190,13 @@
 
 </div>
 
-### 🎮 **TU CENTRO DE COMANDO - Enlaces Directos**
+### **TU CENTRO DE COMANDO - Enlaces Directos**
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
 
 <div style="background: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%); padding: 20px; border-radius: 15px; text-align: center; color: white;">
 
-#### 🚀 **MISIÓN 1: Abrir tu Laboratorio**
+#### **MISIÓN 1: Abrir tu Laboratorio**
 [![Abrir Colab](https://img.shields.io/badge/🚀%20ABRIR-Google%20Colab-orange?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com)
 
 **¿Qué harás aquí?**  
@@ -206,7 +208,7 @@
 
 <div style="background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%); padding: 20px; border-radius: 15px; text-align: center; color: white;">
 
-#### 📊 **MISIÓN 2: Explorar el Tesoro de Datos**
+#### **MISIÓN 2: Explorar el Tesoro de Datos**
 [![Ver Dataset](https://img.shields.io/badge/📊%20EXPLORAR-Datos%20Bogotá-blue?style=for-the-badge&logo=database)](https://datosabiertos.bogota.gov.co)
 
 **¿Qué encontrarás?**  
@@ -218,7 +220,7 @@
 
 <div style="background: linear-gradient(135deg, #388e3c 0%, #4caf50 100%); padding: 20px; border-radius: 15px; text-align: center; color: white;">
 
-#### 📓 **MISIÓN 3: Tu Primera Aventura**
+#### **MISIÓN 3: Tu Primera Aventura**
 [![Primer Notebook](https://img.shields.io/badge/📓%20EMPEZAR-Primera%20Aventura-success?style=for-the-badge&logo=jupyter)](../notebooks/01_primer_viaje_datos.ipynb)
 
 **¿Qué lograrás?**  
@@ -230,7 +232,7 @@
 
 </div>
 
-### 🎯 **PLAN DE ACCIÓN INMEDIATA**
+### **PLAN DE ACCIÓN INMEDIATA**
 
 <div style="background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%); padding: 20px; border-radius: 15px; margin: 20px 0;">
 
@@ -256,33 +258,33 @@
 </div>
 
 #### 🚫 **LO MEJOR: NO necesitas instalar NADA**
-- ❌ Python → ✅ **Ya está en Colab**
-- ❌ Jupyter → ✅ **Ya está en Colab** 
-- ❌ Bibliotecas → ✅ **Ya están en Colab**
-- ❌ Configuraciones → ✅ **Ya está todo listo**
-- ❌ Dolores de cabeza → ✅ **Solo diversión**
+- ❌ Python → **Ya está en Colab**
+- ❌ Jupyter → **Ya está en Colab** 
+- ❌ Bibliotecas → **Ya están en Colab**
+- ❌ Configuraciones → **Ya está todo listo**
+- ❌ Dolores de cabeza → **Solo diversión**
 
 ### 🎊 **¡BONUS: Tu Primer Código de Superpoder!**
 
 <div style="background: #000; color: #00ff00; padding: 15px; border-radius: 10px; font-family: monospace; margin: 15px 0;">
 
 ```python
-# 🎉 Tu primer código de Data Science
-print("🚀 ¡Despegando hacia el mundo de los datos!")
-print("💪 Soy", "tu_nombre_aquí", "y voy a dominar Python")
-print("📊 Mi misión: convertir datos en conocimiento")
-print("🎯 Estado: LISTO PARA LA AVENTURA")
+# Tu primer código de Data Science
+print("¡Despegando hacia el mundo de los datos!")
+print("Soy", "tu_nombre_aquí", "y voy a dominar Python")
+print("Mi misión: convertir datos en conocimiento")
+print("Estado: LISTO PARA LA AVENTURA")
 ```
 
 </div>
 
-**💡 Copia este código en tu primer notebook y ejecútalo. ¡Será tu ritual de iniciación!**
+**Copia este código en tu primer notebook y ejecútalo. ¡Será tu ritual de iniciación!**
 
 ---
 
 ## 🚀 **Tu Plan de Trabajo (¿Por dónde empiezo?)**
 
-### 📅 **Cronograma sugerido para principiantes:**
+### **Cronograma sugerido para principiantes:**
 
 #### **🗓️ Introducción a Python — 20 min**
 - **1.** Qué es Python y para qué sirve
@@ -315,7 +317,7 @@ print("🎯 Estado: LISTO PARA LA AVENTURA")
 
 ## 🧠 **Mentalidad de Éxito**
 
-### 🎯 **Las 5 reglas de oro:**
+### **Las 5 reglas de oro:**
 
 #### **1. 🐌 Ve despacio al principio**
 - No trates de entender todo de una vez
@@ -346,9 +348,9 @@ print("🎯 Estado: LISTO PARA LA AVENTURA")
 
 ## 🚨 **Errores Comunes (y cómo evitarlos)**
 
-### 💥 **"¡Mi código no funciona!"**
+### **"¡Mi código no funciona!"**
 
-#### **🔧 Checklist de solución rápida:**
+#### **Checklist de solución rápida:**
 ```
 ✅ ¿Ejecuté la celda con las importaciones primero?
 ✅ ¿Estoy en Google Colab o en Jupyter local?
@@ -357,7 +359,7 @@ print("🎯 Estado: LISTO PARA LA AVENTURA")
 ✅ ¿Leí el mensaje de error?
 ```
 
-#### **🎯 Los errores más frecuentes:**
+#### **Los errores más frecuentes:**
 | **Error** | **¿Por qué pasa?** | **Solución** |
 |---|---|---|
 | `NameError` | Una variable no existe | Ejecuta la celda donde se define |
@@ -369,22 +371,22 @@ print("🎯 Estado: LISTO PARA LA AVENTURA")
 
 ## 🎪 **Diferentes Formas de Aprender (Encuentra la tuya)**
 
-### 📖 **Si eres más de leer:**
+### **Si eres más de leer:**
 - Lee todas las guías primero
 - Toma notas en tu cuaderno
 - Después practica con el código
 
-### 🎬 **Si eres más visual:**
+### **Si eres más visual:**
 - Mira los videos tutoriales primero
 - Pausa y replica lo que ves
 - Usa los notebooks como referencia
 
-### 🛠️ **Si eres más de "aprender haciendo":**
+### **Si eres más de "aprender haciendo":**
 - Ve directo a los notebooks
 - Ejecuta todo y experimenta
 - Lee las explicaciones cuando te atasques
 
-### 👥 **Si aprendes mejor con otros:**
+### **Si aprendes mejor con otros:**
 - Encuentra un amigo/a para aprender juntos
 - Únete a grupos de estudio online
 - Comparte tu progreso en redes sociales
@@ -393,7 +395,7 @@ print("🎯 Estado: LISTO PARA LA AVENTURA")
 
 ## 🎯 **Tus Metas Realistas**
 
-### 🏆 **Al final de esta aventura, vas a poder:**
+### **Al final de esta aventura, vas a poder:**
 - ✅ Abrir y analizar cualquier dataset básico
 - ✅ Crear gráficos profesionales para presentaciones
 - ✅ Hacer preguntas inteligentes a los datos
@@ -411,15 +413,15 @@ print("🎯 Estado: LISTO PARA LA AVENTURA")
 
 ## 🧰 **Tu Kit de Supervivencia**
 
-### 🆘 **Cuando te sientas perdido/a:**
-1. **🛑 Respira hondo** (esto es normal)
-2. **📖 Relee la sección** que no entiendes  
-3. **🔍 Busca en el glosario** las palabras confusas
-4. **🎬 Mira el video tutorial** correspondiente
-5. **💬 Pregunta** en los issues del repositorio
-6. **🔄 Toma un break** y vuelve más tarde
+### **Cuando te sientas perdido/a:**
+1. **Respira hondo** (esto es normal)
+2. **Relee la sección** que no entiendes  
+3. **Busca en el glosario** las palabras confusas
+4. **Mira el video tutorial** correspondiente
+5. **Pregunta** en los issues del repositorio
+6. **Toma un break** y vuelve más tarde
 
-### 📞 **Tus recursos de emergencia:**
+### **Tus recursos de emergencia:**
 - 📚 [Glosario completo](../recursos/glosario.md)
 - 🆘 [Ayuda frecuente](../recursos/ayuda_frecuente.md)
 - 🎥 [Videos paso a paso](../videos/)
