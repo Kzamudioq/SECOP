@@ -34,6 +34,17 @@
 
 | 🎯 **Palabra** | 🤔 **¿Qué es?** | 🎉 **Ejemplo simple** |
 |---|---|---|
+| <span style="background-color: #e8f5e8; padding: 4px 8px; border-radius: 4px;">**Python**</span> | Un lenguaje de programación súper amigable | Como español, pero para hablar con computadoras |
+| <span style="background-color: #fff3cd; padding: 4px 8px; border-radius: 4px;">**Jupyter Notebook**</span> | Tu cuaderno digital para código | Como Word, pero donde puedes ejecutar código |
+| <span style="background-color: #d1ecf1; padding: 4px 8px; border-radius: 4px;">**Google Colab**</span> | Jupyter Notebook en la nube | Como Google Docs, pero para programar |
+| <span style="background-color: #f8d7da; padding: 4px 8px; border-radius: 4px;">**Pandas**</span> | Biblioteca para manejar datos | Tu Excel súper poderoso en Python |
+| <span style="background-color: #e2e3f5; padding: 4px 8px; border-radius: 4px;">**Plotly**</span> | Biblioteca para hacer gráficos | Tu Paint, pero para gráficos profesionales |
+| <span style="background-color: #d4edda; padding: 4px 8px; border-radius: 4px;">**Dataset**</span> | Una gran tabla con datos | Como una hoja de Excel gigante |
+| <span style="background-color: #ffeaa7; padding: 4px 8px; border-radius: 4px;">**DataFrame**</span> | Como llama Pandas a las tablas | Una tabla con superpoderes |
+| <span style="background-color: #fd79a8; color: white; padding: 4px 8px; border-radius: 4px;">**API**</span> | Una forma de pedir datos automáticamente | Como un mesero que te trae la información |
+
+| 🎯 **Palabra** | 🤔 **¿Qué es?** | 🎉 **Ejemplo simple** |
+|---|---|---|
 | **Python** | Un lenguaje de programación súper amigable | Como español, pero para hablar con computadoras |
 | **Jupyter Notebook** | Tu cuaderno digital para código | Como Word, pero donde puedes ejecutar código |
 | **Google Colab** | Jupyter Notebook en la nube | Como Google Docs, pero para programar |
@@ -60,8 +71,8 @@
 ### 🔗 **Links directos:**
 - [Abrir Google Colab](https://colab.research.google.com)
 - [Dataset de prueba](https://www.datos.gov.co/resource/jbjy-vk9h.json)
-- [Primeros pasos]([enlace-directo](https://github.com/Kzamudioq/IA/tree/main/Primeros%20pasos%20en%20PYTHON)
-- [Primer notebook]([enlace-directo](https://github.com/Kzamudioq/SECOP/blob/master/Codigo/analisis_secop_completo.ipynb)
+- [Primeros pasos]([enlace-directo](https://github.com/Kzamudioq/IA/tree/main/Primeros%20pasos%20en%20PYTHON))
+- [Primer notebook]([enlace-directo](https://github.com/Kzamudioq/SECOP/blob/master/Codigo/analisis_secop_completo.ipynb))
 
 #### 🚫 **NO necesitas instalar:**
 - ❌ Python
