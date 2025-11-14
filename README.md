@@ -15,13 +15,13 @@
 
 ### ¡SÍ! Y te voy a explicar por qué:
 
-#### 🎮 **Piensa en esto como un videojuego:**
+#### **Piensa en esto como un videojuego:**
 - **Nivel 1:** Aprendes los controles básicos (Python básico)
 - **Nivel 2:** Exploras el mundo (cargar y ver datos)
 - **Nivel 3:** Usas herramientas mágicas (crear gráficos)
 - **Nivel 4:** Luchas contra el jefe final (análisis avanzado + IA)
 
-#### 🏗️ **O como construir con LEGO:**
+#### **O como construir con LEGO:**
 - No necesitas inventar los bloques (usamos librerías ya hechas)
 - Solo necesitas saber cómo encajan (lo vas a aprender aquí)
 - Al final, tienes algo increíble (¡tu análisis de datos!)
