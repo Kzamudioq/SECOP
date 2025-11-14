@@ -32,37 +32,6 @@
 
 ### 🔤 **Tu mini-diccionario antes de empezar:**
 
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; margin: 20px 0;">
-  <h3 style="color: white; text-align: center; margin-bottom: 20px;">🔤 Tu mini-diccionario antes de empezar</h3>
-  
-  <table style="width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <thead>
-      <tr style="background: #4f46e5; color: white;">
-        <th style="padding: 15px;">🎯 Palabra</th>
-        <th style="padding: 15px;">🤔 ¿Qué es?</th>
-        <th style="padding: 15px;">🎉 Ejemplo simple</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="background: #f0fff4;">
-        <td style="padding: 12px;"><strong>🐍 Python</strong></td>
-        <td style="padding: 12px;">Un lenguaje de programación súper amigable</td>
-        <td style="padding: 12px;">Como español, pero para hablar con computadoras</td>
-      </tr>
-      <tr style="background: #fffacd;">
-        <td style="padding: 12px;"><strong>📓 Jupyter Notebook</strong></td>
-        <td style="padding: 12px;">Tu cuaderno digital para código</td>
-        <td style="padding: 12px;">Como Word, pero donde puedes ejecutar código</td>
-      </tr>
-      <!-- Continuar con las demás filas... -->
-    </tbody>
-  </table>
-</div>
-
-<div align="center">
-  <h3>🔤 Tu Mini-Diccionario Antes de Empezar</h3>
-  <p><em>¡No te asustes por estas palabras! En 10 minutos las vas a entender perfectamente</em></p>
-</div>
 
 | 🎯 **Palabra** | 🤔 **¿Qué es?** | 🎉 **Ejemplo simple** | 💡 **Nivel** |
 |---|---|---|---|
@@ -77,6 +46,80 @@
 
 <div align="center">
   <p><strong>💡 Tip:</strong> Empieza por los 🟢 y no te preocupes por los 🟠 hasta más tarde</p>
+</div>
+
+
+<div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 25px; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div align="center">
+    <h3 style="color: #1565c0; margin-bottom: 8px;">🔤 Tu Mini-Diccionario Antes de Empezar</h3>
+    <p style="color: #1976d2; font-style: italic; margin-bottom: 20px;"><em>¡No te asustes por estas palabras! En 10 minutos las vas a entender perfectamente</em></p>
+  </div>
+
+  <table style="width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-collapse: collapse;">
+    <thead>
+      <tr style="background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%); color: white;">
+        <th style="padding: 15px; text-align: left; font-weight: bold;">🎯 Palabra</th>
+        <th style="padding: 15px; text-align: left; font-weight: bold;">🤔 ¿Qué es?</th>
+        <th style="padding: 15px; text-align: left; font-weight: bold;">🎉 Ejemplo simple</th>
+        <th style="padding: 15px; text-align: center; font-weight: bold;">💡 Nivel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background: #f8fbff; border-bottom: 1px solid #e3f2fd;">
+        <td style="padding: 12px;">🐍 <strong><a href="https://python.org" target="_blank" style="color: #1565c0; text-decoration: none;">Python</a></strong></td>
+        <td style="padding: 12px;">Un lenguaje de programación súper amigable</td>
+        <td style="padding: 12px;">Como español, pero para hablar con computadoras</td>
+        <td style="padding: 12px; text-align: center;"><span style="background: #4caf50; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px;">🟢 Básico</span></td>
+      </tr>
+      <tr style="background: #ffffff; border-bottom: 1px solid #e3f2fd;">
+        <td style="padding: 12px;">📓 <strong><a href="https://jupyter.org" target="_blank" style="color: #1565c0; text-decoration: none;">Jupyter Notebook</a></strong></td>
+        <td style="padding: 12px;">Tu cuaderno digital para código</td>
+        <td style="padding: 12px;">Como Word, pero donde puedes ejecutar código</td>
+        <td style="padding: 12px; text-align: center;"><span style="background: #4caf50; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px;">🟢 Básico</span></td>
+      </tr>
+      <tr style="background: #f8fbff; border-bottom: 1px solid #e3f2fd;">
+        <td style="padding: 12px;">☁️ <strong><a href="https://colab.research.google.com" target="_blank" style="color: #1565c0; text-decoration: none;">Google Colab</a></strong></td>
+        <td style="padding: 12px;">Jupyter Notebook en la nube</td>
+        <td style="padding: 12px;">Como Google Docs, pero para programar</td>
+        <td style="padding: 12px; text-align: center;"><span style="background: #4caf50; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px;">🟢 Básico</span></td>
+      </tr>
+      <tr style="background: #ffffff; border-bottom: 1px solid #e3f2fd;">
+        <td style="padding: 12px;">🐼 <strong><a href="https://pandas.pydata.org" target="_blank" style="color: #1565c0; text-decoration: none;">Pandas</a></strong></td>
+        <td style="padding: 12px;">Biblioteca para manejar datos</td>
+        <td style="padding: 12px;">Tu Excel súper poderoso en Python</td>
+        <td style="padding: 12px; text-align: center;"><span style="background: #ff9800; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px;">🟡 Intermedio</span></td>
+      </tr>
+      <tr style="background: #f8fbff; border-bottom: 1px solid #e3f2fd;">
+        <td style="padding: 12px;">📊 <strong><a href="https://plotly.com/python/" target="_blank" style="color: #1565c0; text-decoration: none;">Plotly</a></strong></td>
+        <td style="padding: 12px;">Biblioteca para hacer gráficos</td>
+        <td style="padding: 12px;">Tu Paint, pero para gráficos profesionales</td>
+        <td style="padding: 12px; text-align: center;"><span style="background: #ff9800; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px;">🟡 Intermedio</span></td>
+      </tr>
+      <tr style="background: #ffffff; border-bottom: 1px solid #e3f2fd;">
+        <td style="padding: 12px;">📋 <strong><a href="https://es.wikipedia.org/wiki/Conjunto_de_datos" target="_blank" style="color: #1565c0; text-decoration: none;">Dataset</a></strong></td>
+        <td style="padding: 12px;">Una gran tabla con datos</td>
+        <td style="padding: 12px;">Como una hoja de Excel gigante</td>
+        <td style="padding: 12px; text-align: center;"><span style="background: #4caf50; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px;">🟢 Básico</span></td>
+      </tr>
+      <tr style="background: #f8fbff; border-bottom: 1px solid #e3f2fd;">
+        <td style="padding: 12px;">🗃️ <strong><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html" target="_blank" style="color: #1565c0; text-decoration: none;">DataFrame</a></strong></td>
+        <td style="padding: 12px;">Como llama Pandas a las tablas</td>
+        <td style="padding: 12px;">Una tabla con superpoderes</td>
+        <td style="padding: 12px; text-align: center;"><span style="background: #ff9800; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px;">🟡 Intermedio</span></td>
+      </tr>
+      <tr style="background: #ffffff;">
+        <td style="padding: 12px;">🔌 <strong><a href="https://www.redhat.com/es/topics/api/what-are-application-programming-interfaces" target="_blank" style="color: #1565c0; text-decoration: none;">API</a></strong></td>
+        <td style="padding: 12px;">Una forma de pedir datos automáticamente</td>
+        <td style="padding: 12px;">Como un mesero que te trae la información</td>
+        <td style="padding: 12px; text-align: center;"><span style="background: #f44336; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px;">🟠 Avanzado</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div align="center" style="margin-top: 15px; padding: 10px; background: rgba(21, 101, 192, 0.1); border-radius: 8px;">
+    <p style="color: #1565c0; margin: 0;"><strong>💡 Tip:</strong> Empieza por los 🟢 y no te preocupes por los 🟠 hasta más tarde</p>
+    <p style="color: #1976d2; margin: 5px 0 0 0; font-size: 14px;"><em>🔗 Haz clic en cada palabra para visitar su página oficial</em></p>
+  </div>
 </div>
 
 ---
