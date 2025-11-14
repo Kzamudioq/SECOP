@@ -109,11 +109,80 @@
 
 ### 🎉 **¡La respuesta corta: NADA!**
 
-### ✅ **Checklist antes de empezar:**
-- [ ] Cuenta de Google activa
-- [ ] Navegador actualizado
-- [ ] Conexión estable a internet
-- [ ] Espacio de trabajo silencioso (opcional pero recomendado)
+<div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 20px; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <h3 style="color: #1565c0; margin-bottom: 15px;">🛠️ Configuración Inicial (5 minutos)</h3>
+  
+  <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h4 style="color: #1976d2; margin-bottom: 15px;">✅ Checklist antes de empezar:</h4>
+    
+    <div style="margin-bottom: 10px;">
+      <input type="checkbox" id="google-account" style="margin-right: 10px; transform: scale(1.2);">
+      <label for="google-account" style="color: #333; font-size: 16px; cursor: pointer;">
+        🌐 Cuenta de Google activa
+      </label>
+    </div>
+    
+    <div style="margin-bottom: 10px;">
+      <input type="checkbox" id="browser-updated" style="margin-right: 10px; transform: scale(1.2);">
+      <label for="browser-updated" style="color: #333; font-size: 16px; cursor: pointer;">
+        🌍 Navegador actualizado
+      </label>
+    </div>
+    
+    <div style="margin-bottom: 10px;">
+      <input type="checkbox" id="internet-connection" style="margin-right: 10px; transform: scale(1.2);">
+      <label for="internet-connection" style="color: #333; font-size: 16px; cursor: pointer;">
+        📶 Conexión estable a internet
+      </label>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <input type="checkbox" id="quiet-workspace" style="margin-right: 10px; transform: scale(1.2);">
+      <label for="quiet-workspace" style="color: #333; font-size: 16px; cursor: pointer;">
+        🤫 Espacio de trabajo silencioso (opcional pero recomendado)
+      </label>
+    </div>
+    
+    <div id="progress-bar" style="background: #e0e0e0; height: 10px; border-radius: 5px; margin-bottom: 10px;">
+      <div id="progress-fill" style="background: linear-gradient(90deg, #4caf50, #8bc34a); height: 100%; width: 0%; border-radius: 5px; transition: width 0.3s ease;"></div>
+    </div>
+    
+    <div id="completion-message" style="text-align: center; color: #4caf50; font-weight: bold; font-size: 18px; display: none;">
+      🎉 ¡Perfecto! Estás listo/a para empezar tu aventura de datos 🚀
+    </div>
+  </div>
+</div>
+
+<script>
+function updateProgress() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const progressFill = document.getElementById('progress-fill');
+  const completionMessage = document.getElementById('completion-message');
+  
+  let checkedCount = 0;
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked) checkedCount++;
+  });
+  
+  const percentage = (checkedCount / checkboxes.length) * 100;
+  progressFill.style.width = percentage + '%';
+  
+  if (percentage === 100) {
+    completionMessage.style.display = 'block';
+    completionMessage.innerHTML = '🎉 ¡Perfecto! Estás listo/a para empezar tu aventura de datos 🚀';
+  } else {
+    completionMessage.style.display = 'none';
+  }
+}
+
+// Agregar event listeners
+document.addEventListener('DOMContentLoaded', function() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', updateProgress);
+  });
+});
+</script>
 
 **¿Por qué?** Porque vamos a usar **Google Colab**, que funciona 100% en tu navegador.
 
