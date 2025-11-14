@@ -110,22 +110,19 @@
 ### 🎉 **¡La respuesta corta: NADA!**
 
 <div align="center">
-
 ## 🛠️ Configuración Inicial (5 minutos)
-
-![Setup](https://img.shields.io/badge/Configuración-5%20minutos-blue?style=for-the-badge&logo=settings)
-![Nivel](https://img.shields.io/badge/Nivel-Principiante-green?style=for-the-badge&logo=star)
-
 </div>
 
 ### ✅ **Tu Checklist de Supervivencia:**
 
-| ✅ | 🎯 **Requisito** | 📝 **Descripción** | 🔗 **Verificar** |
+<div align="center">
+| ✅ |  **Requisito** |  **Descripción** |  **Verificar** |
 |---|---|---|---|
-| ⬜ | 🌐 **Cuenta Google** | Necesaria para Google Colab | [Iniciar sesión](https://accounts.google.com) |
-| ⬜ | 🌍 **Navegador** | Chrome, Firefox, Safari o Edge | [Verificar versión](https://www.whatsmybrowser.org/) |
-| ⬜ | 📶 **Internet** | Conexión estable | [Test velocidad](https://fast.com) |
-| ⬜ | 🤫 **Ambiente** | Lugar tranquilo (opcional) | Solo tú puedes verificar esto 😉 |
+| ⬜ |  **Cuenta Google** | Necesaria para Google Colab | [Iniciar sesión](https://accounts.google.com) |
+| ⬜ |  **Navegador** | Chrome, Firefox, Safari o Edge | [Verificar versión](https://www.whatsmybrowser.org/) |
+| ⬜ |  **Internet** | Conexión estable | [Test velocidad](https://fast.com) |
+| ⬜ |  **Ambiente** | Lugar tranquilo (opcional) | Solo tú puedes verificar esto |
+</div>
 
 <div align="center">
 
