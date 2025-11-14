@@ -32,6 +32,33 @@
 
 ### 🔤 **Tu mini-diccionario antes de empezar:**
 
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; margin: 20px 0;">
+  <h3 style="color: white; text-align: center; margin-bottom: 20px;">🔤 Tu mini-diccionario antes de empezar</h3>
+  
+  <table style="width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <thead>
+      <tr style="background: #4f46e5; color: white;">
+        <th style="padding: 15px;">🎯 Palabra</th>
+        <th style="padding: 15px;">🤔 ¿Qué es?</th>
+        <th style="padding: 15px;">🎉 Ejemplo simple</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background: #f0fff4;">
+        <td style="padding: 12px;"><strong>🐍 Python</strong></td>
+        <td style="padding: 12px;">Un lenguaje de programación súper amigable</td>
+        <td style="padding: 12px;">Como español, pero para hablar con computadoras</td>
+      </tr>
+      <tr style="background: #fffacd;">
+        <td style="padding: 12px;"><strong>📓 Jupyter Notebook</strong></td>
+        <td style="padding: 12px;">Tu cuaderno digital para código</td>
+        <td style="padding: 12px;">Como Word, pero donde puedes ejecutar código</td>
+      </tr>
+      <!-- Continuar con las demás filas... -->
+    </tbody>
+  </table>
+</div>
+
 <div align="center">
   <h3>🔤 Tu Mini-Diccionario Antes de Empezar</h3>
   <p><em>¡No te asustes por estas palabras! En 10 minutos las vas a entender perfectamente</em></p>
@@ -69,8 +96,8 @@
 ### 🔗 **Links directos:**
 - [Abrir Google Colab](https://colab.research.google.com)
 - [Dataset de prueba](https://www.datos.gov.co/resource/jbjy-vk9h.json)
-- [Primeros pasos]([enlace-directo](https://github.com/Kzamudioq/IA/tree/main/Primeros%20pasos%20en%20PYTHON))
-- [Primer notebook]([enlace-directo](https://github.com/Kzamudioq/SECOP/blob/master/Codigo/analisis_secop_completo.ipynb))
+- [Primeros pasos][enlace-directo](https://github.com/Kzamudioq/IA/tree/main/Primeros%20pasos%20en%20PYTHON)
+- [Primer notebook][enlace-directo](https://github.com/Kzamudioq/SECOP/blob/master/Codigo/analisis_secop_completo.ipynb)
 
 #### 🚫 **NO necesitas instalar:**
 - ❌ Python
