@@ -30,25 +30,6 @@
 
 ## 📚 **¿Qué significan todas esas palabras raras?**
 
-### 🔤 **Tu mini-diccionario antes de empezar:**
-
-
-| 🎯 **Palabra** | 🤔 **¿Qué es?** | 🎉 **Ejemplo simple** | 💡 **Nivel** |
-|---|---|---|---|
-| 🐍 **Python** | Un lenguaje de programación súper amigable | Como español, pero para hablar con computadoras | 🟢 Básico |
-| 📓 **Jupyter Notebook** | Tu cuaderno digital para código | Como Word, pero donde puedes ejecutar código | 🟢 Básico |
-| ☁️ **Google Colab** | Jupyter Notebook en la nube | Como Google Docs, pero para programar | 🟢 Básico |
-| 🐼 **Pandas** | Biblioteca para manejar datos | Tu Excel súper poderoso en Python | 🟡 Intermedio |
-| 📊 **Plotly** | Biblioteca para hacer gráficos | Tu Paint, pero para gráficos profesionales | 🟡 Intermedio |
-| 📋 **Dataset** | Una gran tabla con datos | Como una hoja de Excel gigante | 🟢 Básico |
-| 🗃️ **DataFrame** | Como llama Pandas a las tablas | Una tabla con superpoderes | 🟡 Intermedio |
-| 🔌 **API** | Una forma de pedir datos automáticamente | Como un mesero que te trae la información | 🟠 Avanzado |
-
-<div align="center">
-  <p><strong>💡 Tip:</strong> Empieza por los 🟢 y no te preocupes por los 🟠 hasta más tarde</p>
-</div>
-
-
 <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 25px; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div align="center">
     <h3 style="color: #1565c0; margin-bottom: 8px;">🔤 Tu Mini-Diccionario Antes de Empezar</h3>
