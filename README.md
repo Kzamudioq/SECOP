@@ -278,7 +278,7 @@ print("Estado: LISTO PARA LA AVENTURA")
 
 </div>
 
-**Copia este código en tu primer notebook y ejecútalo. ¡Será tu ritual de iniciación!**
+> **💡 Copia este código en tu primer notebook y ejecútalo. ¡Será tu ritual de iniciación!**
 
 ---
 
