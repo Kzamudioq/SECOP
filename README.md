@@ -110,27 +110,55 @@
 ### 🎉 **¡La respuesta corta: NADA!**
 
 <div align="center">
+
 ## 🛠️ Configuración Inicial (5 minutos)
+
+![Setup](https://img.shields.io/badge/Configuración-5%20minutos-blue?style=for-the-badge&logo=settings)
+![Nivel](https://img.shields.io/badge/Nivel-Principiante-green?style=for-the-badge&logo=star)
+![Tiempo](https://img.shields.io/badge/Tiempo-300%20segundos-orange?style=for-the-badge&logo=clock)
+
 </div>
 
-### ✅ **Tu Checklist de Supervivencia:**
+### 🎯 **TU MISIÓN: Ser un Data Scientist en 5 minutos**
 
-<div align="center">
-| ✅ |  **Requisito** |  **Descripción** |  **Verificar** |
-|---|---|---|---|
-| ⬜ |  **Cuenta Google** | Necesaria para Google Colab | [Iniciar sesión](https://accounts.google.com) |
-| ⬜ |  **Navegador** | Chrome, Firefox, Safari o Edge | [Verificar versión](https://www.whatsmybrowser.org/) |
-| ⬜ |  **Internet** | Conexión estable | [Test velocidad](https://fast.com) |
-| ⬜ |  **Ambiente** | Lugar tranquilo (opcional) | Solo tú puedes verificar esto |
+<div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); padding: 20px; border-radius: 15px; margin: 15px 0; border-left: 5px solid #9c27b0;">
+
+#### ⏱️ **CRONÓMETRO DE LA AVENTURA**
+```
+⏰ MINUTO 1: ✅ Verificar cuenta Google
+⏰ MINUTO 2: 🌐 Abrir Google Colab  
+⏰ MINUTO 3: 📝 Crear tu primer notebook
+⏰ MINUTO 4: 🐍 Ejecutar tu primer código Python
+⏰ MINUTO 5: 🎉 ¡CELEBRAR! Ya eres oficialmente un programador
+```
+
 </div>
 
-<div align="center">
+### ✅ **Tu Checklist de Supervivencia MEJORADO:**
 
-**Progreso:** `[ █░░░ ] 0/4 completado`
+<div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+| ✅ | 🎯 **Requisito** | 📝 **Descripción** | 🔗 **Acción Inmediata** | ⏱️ **Tiempo** |
+|---|---|---|---|---|
+| ⬜ | 🌐 **Cuenta Google** | Necesaria para Google Colab | [📧 Verificar/Crear](https://accounts.google.com) | 30 seg |
+| ⬜ | 🌍 **Navegador Actualizado** | Chrome, Firefox, Safari o Edge | [🔍 Verificar versión](https://www.whatsmybrowser.org/) | 15 seg |
+| ⬜ | 📶 **Internet Estable** | Conexión de al menos 1 Mbps | [⚡ Test velocidad](https://fast.com) | 30 seg |
+| ⬜ | 🤫 **Ambiente Enfocado** | Lugar tranquilo para concentrarte | 🧘‍♀️ Encuentra tu zen | 60 seg |
+| ⬜ | ☕ **Actitud Positiva** | Mentalidad de "voy a lograrlo" | 😊 ¡Sonríe! | 0 seg |
+
+</div>
+
+<div align="center" style="margin: 20px 0;">
+
+**Progreso en Tiempo Real:** 
+```
+[ ████░░░░░░ ] 0/5 completado - ¡Empezando la aventura!
+[ ██████░░░░ ] 3/5 completado - ¡Vas genial!
+[ ██████████ ] 5/5 completado - ¡LISTO PARA DESPEGAR! 🚀
+```
 
 *💡 Ve marcando mentalmente cada ✅ que completes*
 
-</div>
 
 ---
 
