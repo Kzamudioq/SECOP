@@ -49,12 +49,19 @@
 
 ### 🎉 **¡La respuesta corta: NADA!**
 
+### ✅ **Checklist antes de empezar:**
+- [ ] Cuenta de Google activa
+- [ ] Navegador actualizado
+- [ ] Conexión estable a internet
+- [ ] Espacio de trabajo silencioso (opcional pero recomendado)
+
 **¿Por qué?** Porque vamos a usar **Google Colab**, que funciona 100% en tu navegador.
 
-#### ✅ **Solo necesitas:**
-- 🌐 Una conexión a internet
-- 🖥️ Un navegador web (Chrome, Firefox, Safari, Edge)
-- 📧 Una cuenta de Google (¡seguro ya tienes una!)
+### 🔗 **Links directos:**
+- [Abrir Google Colab](https://colab.research.google.com)
+- [Dataset de prueba](https://www.datos.gov.co/resource/jbjy-vk9h.json)
+- [Primeros pasos]([enlace-directo](https://github.com/Kzamudioq/IA/tree/main/Primeros%20pasos%20en%20PYTHON)
+- [Primer notebook]([enlace-directo](https://github.com/Kzamudioq/SECOP/blob/master/Codigo/analisis_secop_completo.ipynb)
 
 #### 🚫 **NO necesitas instalar:**
 - ❌ Python
@@ -64,33 +71,36 @@
 
 ---
 
-## 🚀 **Tu Plan de Vuelo (¿Por dónde empiezo?)**
+## 🚀 **Tu Plan de Trabajo (¿Por dónde empiezo?)**
 
 ### 📅 **Cronograma sugerido para principiantes:**
 
-#### **🗓️ Semana 1: Primeros Pasos**
-- **Día 1-2:** Lee esta guía + [Python para Humanos](01_python_para_humanos.md)
-- **Día 3-4:** Abre tu primer notebook y juega con él
-- **Día 5-6:** Completa los ejercicios básicos
-- **Día 7:** ¡Descansa! (Tu cerebro necesita procesar 🧠)
+#### **🗓️ Introducción a Python — 20 min**
+- **1.** Qué es Python y para qué sirve
+- **2.** Abrir Google Colab o Jupyter
+- **3.** Ejecutar tu primer código: print("Hola Karen")
+- **4.** ¡Descansa! (Tu cerebro necesita procesar 🧠)
 
-#### **🗓️ Semana 2: Explorando Datos**
-- **Día 1-2:** Aprende Pandas básico
-- **Día 3-4:** Carga tu primer dataset de SECOP
-- **Día 5-6:** Explora y haz preguntas a los datos
-- **Día 7:** Celebra tus primeros descubrimientos 🎉
+#### **🗓️ Variables y operaciones básicas — 25 min**
+- **5.** Números, texto, listas, diccionarios
+- **6.** Ejercicios rápidos: Operaciones matemáticas, crear un diccionario con datos de un predio y manejo básico de cadenas.
+- **7.** Explora y haz preguntas
+- **8.** Celebra tus primeros descubrimientos 🎉
 
-#### **🗓️ Semana 3: Visualización**
-- **Día 1-2:** Crea tus primeros gráficos
-- **Día 3-4:** Haz gráficos interactivos
-- **Día 5-6:** Construye un mini-dashboard
-- **Día 7:** Comparte tu trabajo con amigos/familia
+#### **🗓️ Descanso — 5 min**
 
-#### **🗓️ Semana 4: IA y Análisis Avanzado**
-- **Día 1-2:** Entiende qué es Machine Learning
-- **Día 3-4:** Tu primer modelo predictivo
-- **Día 5-6:** Análisis de redes sociales
-- **Día 7:** ¡Eres oficialmente un data detective! 🕵️‍♀️
+#### **🗓️ Introducción a Pandas — 30 min**
+- **9.** Crear tu primer DataFrame
+- **10.** Cargar un archivo .json directamente desde una URL oficial (Datos Abiertos)
+- **11.** Filtrar, seleccionar columnas y limpiar datos básicos
+- **12.** Generar una visualización rápida (gráfico de barras o histograma)
+
+#### **🗓️ Entiende tus datos con ayuda de ChatGPT**
+- **13.** Interpretar cada columna de un dataset JSON o DataFrame.
+- **14.** Descubrir qué significan variables, categorías o códigos.
+- **15.** Identificar qué datos están incompletos, repetidos o inconsistentes.
+- **15.** Sugerirte pasos para limpiar o preparar tu dataset.
+- **Día 7:** ¡Eres oficialmente un data detective junior jajaja! 🕵️‍♀️
 
 ---
 
