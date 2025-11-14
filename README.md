@@ -32,27 +32,25 @@
 
 ### 🔤 **Tu mini-diccionario antes de empezar:**
 
-| 🎯 **Palabra** | 🤔 **¿Qué es?** | 🎉 **Ejemplo simple** |
-|---|---|---|
-| <span style="background-color: #e8f5e8; padding: 4px 8px; border-radius: 4px;">**Python**</span> | Un lenguaje de programación súper amigable | Como español, pero para hablar con computadoras |
-| <span style="background-color: #fff3cd; padding: 4px 8px; border-radius: 4px;">**Jupyter Notebook**</span> | Tu cuaderno digital para código | Como Word, pero donde puedes ejecutar código |
-| <span style="background-color: #d1ecf1; padding: 4px 8px; border-radius: 4px;">**Google Colab**</span> | Jupyter Notebook en la nube | Como Google Docs, pero para programar |
-| <span style="background-color: #f8d7da; padding: 4px 8px; border-radius: 4px;">**Pandas**</span> | Biblioteca para manejar datos | Tu Excel súper poderoso en Python |
-| <span style="background-color: #e2e3f5; padding: 4px 8px; border-radius: 4px;">**Plotly**</span> | Biblioteca para hacer gráficos | Tu Paint, pero para gráficos profesionales |
-| <span style="background-color: #d4edda; padding: 4px 8px; border-radius: 4px;">**Dataset**</span> | Una gran tabla con datos | Como una hoja de Excel gigante |
-| <span style="background-color: #ffeaa7; padding: 4px 8px; border-radius: 4px;">**DataFrame**</span> | Como llama Pandas a las tablas | Una tabla con superpoderes |
-| <span style="background-color: #fd79a8; color: white; padding: 4px 8px; border-radius: 4px;">**API**</span> | Una forma de pedir datos automáticamente | Como un mesero que te trae la información |
+<div align="center">
+  <h3>🔤 Tu Mini-Diccionario Antes de Empezar</h3>
+  <p><em>¡No te asustes por estas palabras! En 10 minutos las vas a entender perfectamente</em></p>
+</div>
 
-| 🎯 **Palabra** | 🤔 **¿Qué es?** | 🎉 **Ejemplo simple** |
-|---|---|---|
-| **Python** | Un lenguaje de programación súper amigable | Como español, pero para hablar con computadoras |
-| **Jupyter Notebook** | Tu cuaderno digital para código | Como Word, pero donde puedes ejecutar código |
-| **Google Colab** | Jupyter Notebook en la nube | Como Google Docs, pero para programar |
-| **Pandas** | Biblioteca para manejar datos | Tu Excel súper poderoso en Python |
-| **Plotly** | Biblioteca para hacer gráficos | Tu Paint, pero para gráficos profesionales |
-| **Dataset** | Una gran tabla con datos | Como una hoja de Excel gigante |
-| **DataFrame** | Como llama Pandas a las tablas | Una tabla con superpoderes |
-| **API** | Una forma de pedir datos automáticamente | Como un mesero que te trae la información |
+| 🎯 **Palabra** | 🤔 **¿Qué es?** | 🎉 **Ejemplo simple** | 💡 **Nivel** |
+|---|---|---|---|
+| 🐍 **Python** | Un lenguaje de programación súper amigable | Como español, pero para hablar con computadoras | 🟢 Básico |
+| 📓 **Jupyter Notebook** | Tu cuaderno digital para código | Como Word, pero donde puedes ejecutar código | 🟢 Básico |
+| ☁️ **Google Colab** | Jupyter Notebook en la nube | Como Google Docs, pero para programar | 🟢 Básico |
+| 🐼 **Pandas** | Biblioteca para manejar datos | Tu Excel súper poderoso en Python | 🟡 Intermedio |
+| 📊 **Plotly** | Biblioteca para hacer gráficos | Tu Paint, pero para gráficos profesionales | 🟡 Intermedio |
+| 📋 **Dataset** | Una gran tabla con datos | Como una hoja de Excel gigante | 🟢 Básico |
+| 🗃️ **DataFrame** | Como llama Pandas a las tablas | Una tabla con superpoderes | 🟡 Intermedio |
+| 🔌 **API** | Una forma de pedir datos automáticamente | Como un mesero que te trae la información | 🟠 Avanzado |
+
+<div align="center">
+  <p><strong>💡 Tip:</strong> Empieza por los 🟢 y no te preocupes por los 🟠 hasta más tarde</p>
+</div>
 
 ---
 
