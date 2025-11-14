@@ -109,77 +109,156 @@
 
 ### 🎉 **¡La respuesta corta: NADA!**
 
-<div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 20px; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <h3 style="color: #1565c0; margin-bottom: 15px;">🛠️ Configuración Inicial (5 minutos)</h3>
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
+  <div style="text-align: center; margin-bottom: 20px;">
+    <h3 style="color: white; margin: 0;">🛠️ Misión: Preparación para el Despegue</h3>
+    <p style="color: #e8f0fe; margin: 5px 0 0 0;">Completa todos los requisitos para desbloquear tu aventura</p>
+  </div>
   
-  <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <h4 style="color: #1976d2; margin-bottom: 15px;">✅ Checklist antes de empezar:</h4>
+  <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     
-    <div style="margin-bottom: 10px;">
-      <input type="checkbox" id="google-account" style="margin-right: 10px; transform: scale(1.2);">
-      <label for="google-account" style="color: #333; font-size: 16px; cursor: pointer;">
-        🌐 Cuenta de Google activa
+    <!-- Barra de progreso con puntos -->
+    <div style="margin-bottom: 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <span style="font-weight: bold; color: #333;">Progreso de Misión:</span>
+        <span id="points-display" style="background: #4caf50; color: white; padding: 5px 10px; border-radius: 15px; font-weight: bold;">0/4 ⭐</span>
+      </div>
+      <div style="background: #e0e0e0; height: 15px; border-radius: 7px; overflow: hidden;">
+        <div id="game-progress-fill" style="background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4); height: 100%; width: 0%; transition: width 0.5s ease; position: relative;">
+          <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent); background-size: 10px 10px; animation: progress-animation 1s linear infinite;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checklist items -->
+    <div class="checklist-item" style="margin-bottom: 15px; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; transition: all 0.3s ease;">
+      <input type="checkbox" id="game-google" style="margin-right: 15px; transform: scale(1.3);">
+      <label for="game-google" style="color: #333; font-size: 16px; cursor: pointer; display: flex; align-items: center;">
+        <span style="margin-right: 10px; font-size: 20px;">🌐</span>
+        <div>
+          <strong>Cuenta de Google activa</strong>
+          <div style="font-size: 14px; color: #666; margin-top: 2px;">Necesaria para acceder a Google Colab</div>
+        </div>
       </label>
+      <div class="completion-badge" style="display: none; margin-left: auto; background: #4caf50; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">✓ Completado</div>
     </div>
-    
-    <div style="margin-bottom: 10px;">
-      <input type="checkbox" id="browser-updated" style="margin-right: 10px; transform: scale(1.2);">
-      <label for="browser-updated" style="color: #333; font-size: 16px; cursor: pointer;">
-        🌍 Navegador actualizado
+
+    <div class="checklist-item" style="margin-bottom: 15px; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; transition: all 0.3s ease;">
+      <input type="checkbox" id="game-browser" style="margin-right: 15px; transform: scale(1.3);">
+      <label for="game-browser" style="color: #333; font-size: 16px; cursor: pointer; display: flex; align-items: center;">
+        <span style="margin-right: 10px; font-size: 20px;">🌍</span>
+        <div>
+          <strong>Navegador actualizado</strong>
+          <div style="font-size: 14px; color: #666; margin-top: 2px;">Chrome, Firefox, Safari o Edge versión reciente</div>
+        </div>
       </label>
+      <div class="completion-badge" style="display: none; margin-left: auto; background: #4caf50; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">✓ Completado</div>
     </div>
-    
-    <div style="margin-bottom: 10px;">
-      <input type="checkbox" id="internet-connection" style="margin-right: 10px; transform: scale(1.2);">
-      <label for="internet-connection" style="color: #333; font-size: 16px; cursor: pointer;">
-        📶 Conexión estable a internet
+
+    <div class="checklist-item" style="margin-bottom: 15px; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; transition: all 0.3s ease;">
+      <input type="checkbox" id="game-internet" style="margin-right: 15px; transform: scale(1.3);">
+      <label for="game-internet" style="color: #333; font-size: 16px; cursor: pointer; display: flex; align-items: center;">
+        <span style="margin-right: 10px; font-size: 20px;">📶</span>
+        <div>
+          <strong>Conexión estable a internet</strong>
+          <div style="font-size: 14px; color: #666; margin-top: 2px;">Para cargar datos y ejecutar código en la nube</div>
+        </div>
       </label>
+      <div class="completion-badge" style="display: none; margin-left: auto; background: #4caf50; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">✓ Completado</div>
     </div>
-    
-    <div style="margin-bottom: 15px;">
-      <input type="checkbox" id="quiet-workspace" style="margin-right: 10px; transform: scale(1.2);">
-      <label for="quiet-workspace" style="color: #333; font-size: 16px; cursor: pointer;">
-        🤫 Espacio de trabajo silencioso (opcional pero recomendado)
+
+    <div class="checklist-item" style="margin-bottom: 20px; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; transition: all 0.3s ease;">
+      <input type="checkbox" id="game-workspace" style="margin-right: 15px; transform: scale(1.3);">
+      <label for="game-workspace" style="color: #333; font-size: 16px; cursor: pointer; display: flex; align-items: center;">
+        <span style="margin-right: 10px; font-size: 20px;">🤫</span>
+        <div>
+          <strong>Espacio de trabajo silencioso</strong>
+          <div style="font-size: 14px; color: #666; margin-top: 2px;">Opcional pero recomendado para concentrarte mejor</div>
+        </div>
       </label>
+      <div class="completion-badge" style="display: none; margin-left: auto; background: #4caf50; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px;">✓ Completado</div>
     </div>
     
-    <div id="progress-bar" style="background: #e0e0e0; height: 10px; border-radius: 5px; margin-bottom: 10px;">
-      <div id="progress-fill" style="background: linear-gradient(90deg, #4caf50, #8bc34a); height: 100%; width: 0%; border-radius: 5px; transition: width 0.3s ease;"></div>
-    </div>
-    
-    <div id="completion-message" style="text-align: center; color: #4caf50; font-weight: bold; font-size: 18px; display: none;">
-      🎉 ¡Perfecto! Estás listo/a para empezar tu aventura de datos 🚀
+    <!-- Mensaje de finalización -->
+    <div id="game-completion" style="text-align: center; padding: 20px; background: linear-gradient(135deg, #4caf50, #8bc34a); border-radius: 10px; color: white; display: none; animation: celebration 1s ease-in-out;">
+      <h3 style="margin: 0 0 10px 0;">🎉 ¡MISIÓN COMPLETADA! 🎉</h3>
+      <p style="margin: 0; font-size: 18px;">Estás oficialmente listo/a para convertirte en un/a Data Explorer</p>
+      <div style="margin-top: 10px;">
+        <button onclick="startJourney()" style="background: white; color: #4caf50; border: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; cursor: pointer; font-size: 16px;">
+          🚀 ¡Empezar mi Aventura de Datos!
+        </button>
+      </div>
     </div>
   </div>
 </div>
 
+<style>
+@keyframes progress-animation {
+  0% { background-position: 0 0; }
+  100% { background-position: 20px 0; }
+}
+
+@keyframes celebration {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.checklist-item:hover {
+  border-color: #bbdefb !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.checklist-item.completed {
+  border-color: #4caf50 !important;
+  background: #f1f8e9;
+}
+</style>
+
 <script>
-function updateProgress() {
+function updateGameProgress() {
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  const progressFill = document.getElementById('progress-fill');
-  const completionMessage = document.getElementById('completion-message');
+  const progressFill = document.getElementById('game-progress-fill');
+  const pointsDisplay = document.getElementById('points-display');
+  const completionDiv = document.getElementById('game-completion');
   
   let checkedCount = 0;
-  checkboxes.forEach(checkbox => {
-    if (checkbox.checked) checkedCount++;
+  
+  checkboxes.forEach((checkbox, index) => {
+    const item = checkbox.closest('.checklist-item');
+    const badge = item.querySelector('.completion-badge');
+    
+    if (checkbox.checked) {
+      checkedCount++;
+      item.classList.add('completed');
+      badge.style.display = 'block';
+    } else {
+      item.classList.remove('completed');
+      badge.style.display = 'none';
+    }
   });
   
   const percentage = (checkedCount / checkboxes.length) * 100;
   progressFill.style.width = percentage + '%';
+  pointsDisplay.textContent = `${checkedCount}/${checkboxes.length} ⭐`;
   
   if (percentage === 100) {
-    completionMessage.style.display = 'block';
-    completionMessage.innerHTML = '🎉 ¡Perfecto! Estás listo/a para empezar tu aventura de datos 🚀';
+    completionDiv.style.display = 'block';
   } else {
-    completionMessage.style.display = 'none';
+    completionDiv.style.display = 'none';
   }
+}
+
+function startJourney() {
+  alert('🎉 ¡Increíble! Ahora dirígete al primer notebook y comienza tu aventura de datos 🚀');
 }
 
 // Agregar event listeners
 document.addEventListener('DOMContentLoaded', function() {
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('change', updateProgress);
+    checkbox.addEventListener('change', updateGameProgress);
   });
 });
 </script>
