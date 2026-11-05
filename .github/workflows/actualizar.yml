@@ -24,10 +24,19 @@ jobs:
         env:
           SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
         run: python -m secop todo --desde "${{ github.event.inputs.desde || '2021-01-01' }}" --alcance "entidades con sede en Bogotá"
+      - name: Guardar resultados como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: salidas-secop
+          path: salidas
+          if-no-files-found: ignore
       - name: Publicar resultados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add salidas
-          git diff --cached --quiet || git commit -m "Informe SECOP actualizado $(date +%Y-%m-%d)"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "Informe SECOP actualizado $(date +%Y-%m-%d)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
