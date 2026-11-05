@@ -1,0 +1,33 @@
+name: actualizar informe
+# Descarga SECOP II, regenera figuras y tablas y las publica en el repositorio.
+on:
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Fecha inicial (AAAA-MM-DD)"
+        default: "2021-01-01"
+  schedule:
+    - cron: "17 9 3 * *"   # día 3 de cada mes
+permissions:
+  contents: write
+jobs:
+  informe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - name: Descargar y analizar
+        env:
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+        run: python -m secop todo --desde "${{ github.event.inputs.desde || '2021-01-01' }}" --alcance "entidades con sede en Bogotá"
+      - name: Publicar resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add salidas
+          git diff --cached --quiet || git commit -m "Informe SECOP actualizado $(date +%Y-%m-%d)"
+          git push
