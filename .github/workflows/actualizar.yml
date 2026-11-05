@@ -38,5 +38,8 @@ jobs:
           git add salidas
           git diff --cached --quiet && exit 0
           git commit -m "Informe SECOP actualizado $(date +%Y-%m-%d)"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            echo "Intento $i fallido, reintentando en $((i * 20)) s"; sleep $((i * 20))
+          done
+          exit 1
