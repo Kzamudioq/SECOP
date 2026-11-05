@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secop"
+version = "2.0.0"
+description = "Análisis reproducible de la contratación pública colombiana (SECOP II, datos.gov.co)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Karen Tatiana Zamudio Quintero", email = "Kzamudioquintero@gmail.com" }]
+dependencies = ["pandas>=2.0", "numpy", "matplotlib>=3.7", "requests", "pyarrow", "openpyxl"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = ["tests", "src/secop/limpieza.py"]
