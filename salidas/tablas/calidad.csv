@@ -1,0 +1,10 @@
+control,contratos,porcentaje
+Registros descargados,1451909,
+Duplicados de id_contrato eliminados,0,
+Contratos únicos analizados,1451909,
+"Valor del contrato vacío, ilegible o <= 0",14580,1.0
+Fecha de firma vacía o fuera de rango,0,0.0
+Fecha de fin anterior a la de inicio,78,0.01
+Duración mayor a 10 años,373,0.03
+Valor pagado mayor que el valor del contrato,610,0.04
+Inicio de ejecución anterior a la firma,1385,0.1
