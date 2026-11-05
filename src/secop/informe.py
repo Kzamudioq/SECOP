@@ -32,6 +32,7 @@ def generar(df: pd.DataFrame, calidad: ReporteCalidad, salida: str | Path, alcan
     figs = salida / "figuras"
     fuente = f"Fuente: SECOP II, datos.gov.co ({alcance})"
     u = utilizables(df)
+    imp = df.loc[df["q_valor_implausible"], "valor_del_contrato"]
 
     r = an.resumen(df)
     mensual = an.serie_mensual(df)
@@ -74,7 +75,9 @@ def generar(df: pd.DataFrame, calidad: ReporteCalidad, salida: str | Path, alcan
           f"- Valor total: **{gr.cop(r['valor_total'])}**; contrato mediano: **{gr.cop(r['valor_mediano'])}**.",
           f"- Contratación directa: **{pct(r['pct_directa_contratos'])}** de los contratos y "
           f"**{pct(r['pct_directa_valor'])}** del valor.",
-          f"- Contratos con personas naturales: **{pct(r['pct_persona_natural'])}**.", "",
+          f"- Contratos con personas naturales: **{pct(r['pct_persona_natural'])}**.",
+          f"- Se excluyeron de los totales **{gr.miles(imp.size)}** contratos con valores implausibles "
+          f"(probables errores de digitación) que sumaban **{gr.cop(imp.sum())}**. Ver `tablas/alertas.csv`.", "",
           "## Calidad de los datos", "", _md(calidad.tabla(), {"contratos": gr.miles, "porcentaje": pct}, index=False), ""]
     if not garantias.empty:
         md += ["## Ley de Garantías", "",

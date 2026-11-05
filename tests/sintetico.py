@@ -14,7 +14,8 @@ TIPOS = {"Contratación directa": "Prestación de servicios", "Mínima cuantía"
 ESCALA = {"Contratación directa": 7.5, "Mínima cuantía": 7.0, "Selección Abreviada de Menor Cuantía": 8.2,
           "Contratación régimen especial": 8.0, "Licitación pública": 9.6, "Concurso de méritos abierto": 8.9}
 
-SEMBRADOS = {"atipico": "CO1.PCCNTR.ATIPICO", "pagado": "CO1.PCCNTR.PAGADO", "adicion": "CO1.PCCNTR.ADICION"}
+SEMBRADOS = {"atipico": "CO1.PCCNTR.ATIPICO", "pagado": "CO1.PCCNTR.PAGADO", "adicion": "CO1.PCCNTR.ADICION",
+             "digitacion": "CO1.PCCNTR.DIGITACION"}
 
 
 def generar(n: int = 6000, seed: int = 7) -> pd.DataFrame:
@@ -82,6 +83,11 @@ def generar(n: int = 6000, seed: int = 7) -> pd.DataFrame:
     df.loc[11, ["id_contrato", "valor_del_contrato", "valor_pagado"]] = [SEMBRADOS["pagado"], "10000000", "25000000"]
     df.loc[12, ["id_contrato", "fecha_de_inicio_del_contrato", "fecha_de_fin_del_contrato", "dias_adicionados"]] = \
         [SEMBRADOS["adicion"], "2023-01-10T00:00:00.000", "2023-12-31T00:00:00.000", "250"]
+    # como el caso real: prestación de servicios con persona natural por $577 billones, pagado $22 M
+    df.loc[13, ["id_contrato", "modalidad_de_contratacion", "tipo_de_contrato", "tipodocproveedor",
+                "valor_del_contrato", "valor_pagado"]] = \
+        [SEMBRADOS["digitacion"], "Contratación directa", "Prestación de servicios", "Cédula de Ciudadanía",
+         "577152708416072", "22689330"]
     dup = df.iloc[100:130].copy()
     dup["ultima_actualizacion"] = "2024-08-01T00:00:00.000"
     dup["estado_contrato"] = "Cerrado"

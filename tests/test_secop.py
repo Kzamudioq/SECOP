@@ -44,8 +44,18 @@ def test_limpieza_y_calidad(datos):
     assert cal.problemas["q_valor_invalido"] >= 2
     assert cal.problemas["q_fecha_firma_invalida"] >= 1
     assert cal.problemas["q_fin_antes_inicio"] >= 1
-    assert len(utilizables(df)) == len(df) - (df["q_valor_invalido"] | df["q_fecha_firma_invalida"]).sum()
+    assert len(utilizables(df)) == len(df) - (df["q_valor_invalido"] | df["q_fecha_firma_invalida"] | df["q_valor_implausible"]).sum()
     assert np.isnan(df.loc[5, "valor_del_contrato"]) or df["valor_del_contrato"].isna().sum() >= 1
+
+
+def test_valores_implausibles_no_inflan_totales(datos):
+    crudo, df, cal = datos
+    fila = df.set_index("id_contrato").loc[SEMBRADOS["digitacion"]]
+    assert fila["q_valor_implausible"]
+    assert SEMBRADOS["digitacion"] not in set(utilizables(df)["id_contrato"])
+    assert an.resumen(df)["valor_total"] < 1e13  # sin el error, el total es del orden real
+    assert 1 <= cal.problemas["q_valor_implausible"] <= 3
+    assert an.alertas(df).set_index("id_contrato").loc[SEMBRADOS["digitacion"], "valor_atipico"]
 
 
 def test_estacionalidad_y_veda(datos):

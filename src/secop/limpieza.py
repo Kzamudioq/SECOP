@@ -102,6 +102,7 @@ class ReporteCalidad:
 
 DESCRIPCION_Q = {
     "q_valor_invalido": "Valor del contrato vacío, ilegible o <= 0",
+    "q_valor_implausible": "Valor implausible (error de digitación probable), excluido de los totales",
     "q_fecha_firma_invalida": "Fecha de firma vacía o fuera de rango",
     "q_fin_antes_inicio": "Fecha de fin anterior a la de inicio",
     "q_duracion_extrema": "Duración mayor a 10 años",
@@ -155,6 +156,7 @@ def limpiar(crudo: pd.DataFrame, hoy: pd.Timestamp | None = None) -> tuple[pd.Da
 
     # marcas de calidad (no se borra nada)
     df["q_valor_invalido"] = ~(df["valor_del_contrato"] > 0)
+    df["q_valor_implausible"] = valor_implausible(df)
     df["q_fecha_firma_invalida"] = df["fecha_de_firma"].isna()
     df["q_fin_antes_inicio"] = df["duracion_dias"] < 0
     df["q_duracion_extrema"] = df["duracion_dias"] > 3650
@@ -165,9 +167,27 @@ def limpiar(crudo: pd.DataFrame, hoy: pd.Timestamp | None = None) -> tuple[pd.Da
     return df, rep
 
 
+TOPE_VALOR = 1e13            # $10 billones: por encima, ningún contrato individual es creíble
+TOPE_PERSONA_NATURAL = 1e10  # $10 mil millones con persona natural...
+PAGO_MINIMO = 0.01           # ...y pagado menos del 1 %: casi siempre ceros de más
+
+
+def valor_implausible(df: pd.DataFrame) -> pd.Series:
+    """Montos que casi seguro son errores de digitación.
+
+    En SECOP II aparecen contratos de prestación de servicios con personas naturales por
+    cientos de billones de pesos, con pagos de unos pocos millones. Dos de ellos bastan para
+    que el "valor total" de Bogotá supere varias veces el presupuesto de la Nación. Se
+    marcan y se excluyen de los totales; siguen visibles en la tabla de señales.
+    """
+    v = df["valor_del_contrato"]
+    pagado = df["valor_pagado"].fillna(0) if "valor_pagado" in df else pd.Series(0.0, index=df.index)
+    return (v >= TOPE_VALOR) | (df["persona_natural"] & (v >= TOPE_PERSONA_NATURAL) & (pagado < PAGO_MINIMO * v))
+
+
 def utilizables(df: pd.DataFrame) -> pd.DataFrame:
-    """Contratos con fecha y valor válidos: la base de casi todos los indicadores."""
-    return df[~df["q_valor_invalido"] & ~df["q_fecha_firma_invalida"]]
+    """Contratos con fecha y valor válidos y creíbles: la base de casi todos los indicadores."""
+    return df[~df["q_valor_invalido"] & ~df["q_fecha_firma_invalida"] & ~df["q_valor_implausible"]]
 
 
 def etiqueta_proveedor(nombre, persona_natural: bool, documento) -> str:

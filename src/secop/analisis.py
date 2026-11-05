@@ -200,14 +200,14 @@ def alertas(df: pd.DataFrame, z: float = 3.5, min_grupo: int = 30) -> pd.DataFra
     * ``adicion_mayor_50``: los días adicionados superan la mitad del plazo original.
     * ``inicio_antes_firma``: la ejecución empezó antes de firmar.
     """
-    u = utilizables(df).copy()
+    u = df[~df["q_valor_invalido"] & ~df["q_fecha_firma_invalida"]].copy()  # incluye los implausibles
     lv = np.log10(u["valor_del_contrato"])
     grupo = [u["tipo_de_contrato"].fillna("?"), u["modalidad_de_contratacion"].fillna("?")]
     med = lv.groupby(grupo).transform("median")
     mad = (lv - med).abs().groupby(grupo).transform("median") * 1.4826
     n = lv.groupby(grupo).transform("size")
     u["z_robusto"] = ((lv - med) / mad.replace(0, np.nan)).where(n >= min_grupo)
-    u["valor_atipico"] = u["z_robusto"].abs() > z
+    u["valor_atipico"] = (u["z_robusto"].abs() > z) | u["q_valor_implausible"]
     u["pagado_supera_valor"] = u["q_pagado_supera_valor"]
     plazo = u["duracion_dias"] - u["dias_adicionados"].fillna(0)
     u["adicion_mayor_50"] = (u["dias_adicionados"].fillna(0) > 0) & (u["dias_adicionados"] > 0.5 * plazo.clip(lower=1))
