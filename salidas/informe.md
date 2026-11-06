@@ -1,13 +1,14 @@
 # Informe SECOP II · entidades con sede en Bogotá
 
-Contratos firmados entre **02/01/2021** y **04/11/2026**. Generado el 05/11/2026.
+Contratos firmados entre **02/01/2021** y **04/11/2026**. Generado el 06/11/2026.
 
 ## En cifras
 
-- **1.437.329** contratos únicos con fecha y valor válidos (de 1.451.909), de **446** entidades y **392.565** proveedores.
-- Valor total: **$994,3 billones**; contrato mediano: **$35 M**.
-- Contratación directa: **77,2 %** de los contratos y **80,3 %** del valor.
+- **1.437.291** contratos únicos con fecha y valor válidos (de 1.451.909), de **446** entidades y **392.552** proveedores.
+- Valor total: **$352,9 billones**; contrato mediano: **$35 M**.
+- Contratación directa: **77,2 %** de los contratos y **44,8 %** del valor.
 - Contratos con personas naturales: **88,6 %**.
+- Se excluyeron de los totales **38** contratos con valores implausibles (probables errores de digitación) que sumaban **$641,4 billones**. Ver `tablas/alertas.csv`.
 
 ## Calidad de los datos
 
@@ -17,6 +18,7 @@ Contratos firmados entre **02/01/2021** y **04/11/2026**. Generado el 05/11/2026
 | Duplicados de id_contrato eliminados | 0 |  |
 | Contratos únicos analizados | 1.451.909 |  |
 | Valor del contrato vacío, ilegible o <= 0 | 14.580 | 1,0 % |
+| Valor implausible (error de digitación probable), excluido de los totales | 38 | 0,0 % |
 | Fecha de firma vacía o fuera de rango | 0 | 0,0 % |
 | Fecha de fin anterior a la de inicio | 78 | 0,0 % |
 | Duración mayor a 10 años | 373 | 0,0 % |
@@ -29,37 +31,37 @@ Contratación directa en los 30 días previos a cada veda, comparada con los mis
 
 | veda | inicio | fin | directa_30d_antes | promedio_otros_anios | razon | directa_durante_veda | anios_referencia |
 |---|---|---|---|---|---|---|---|
-| Presidencial 2022 | 2022-01-29 | 2022-06-19 | 89944 | 49.702 | 1,81 | 5786 | 4 |
+| Presidencial 2022 | 2022-01-29 | 2022-06-19 | 89942 | 49.702 | 1,81 | 5786 | 4 |
 | Territoriales 2023 | 2023-06-29 | 2023-10-29 | 8544 | 2.072 | 4,12 | 3682 | 5 |
-| Presidencial 2026 | 2026-01-31 | 2026-06-21 | 126103 | 47.263 | 2,67 | 2030 | 4 |
+| Presidencial 2026 | 2026-01-31 | 2026-06-21 | 126103 | 47.262 | 2,67 | 2029 | 4 |
 
 ## Modalidades
 
 | modalidad_de_contratacion | contratos | valor | mediana | pct_contratos | pct_valor |
 |---|---|---|---|---|---|
-| Contratación directa | 1.096.801 | $744,9 billones | $35 M | 76,3 % | 74,9 % |
-| Contratación Directa (con ofertas) | 12.366 | $53,7 billones | $202 M | 0,9 % | 5,4 % |
-| Licitación pública Obra Publica | 2.168 | $47,0 billones | $4 mil M | 0,2 % | 4,7 % |
-| Contratación régimen especial | 237.666 | $39,3 billones | $27 M | 16,5 % | 3,9 % |
-| Licitación pública | 4.543 | $32,1 billones | $1 mil M | 0,3 % | 3,2 % |
-| Selección Abreviada de Menor Cuantía | 11.316 | $24,6 billones | $275 M | 0,8 % | 2,5 % |
-| Contratación régimen especial (con ofertas) | 10.123 | $20,0 billones | $228 M | 0,7 % | 2,0 % |
-| Selección abreviada subasta inversa | 14.593 | $15,8 billones | $300 M | 1,0 % | 1,6 % |
+| Contratación directa | 1.096.792 | $104,5 billones | $35 M | 76,3 % | 29,6 % |
+| Contratación Directa (con ofertas) | 12.365 | $53,7 billones | $202 M | 0,9 % | 15,2 % |
+| Licitación pública Obra Publica | 2.160 | $46,9 billones | $4 mil M | 0,2 % | 13,3 % |
+| Contratación régimen especial | 237.662 | $39,0 billones | $27 M | 16,5 % | 11,1 % |
+| Licitación pública | 4.539 | $32,0 billones | $1 mil M | 0,3 % | 9,1 % |
+| Selección Abreviada de Menor Cuantía | 11.315 | $24,6 billones | $275 M | 0,8 % | 7,0 % |
+| Contratación régimen especial (con ofertas) | 10.118 | $19,9 billones | $228 M | 0,7 % | 5,7 % |
+| Selección abreviada subasta inversa | 14.590 | $15,7 billones | $300 M | 1,0 % | 4,4 % |
 
 ## Sectores (top 10 por valor)
 
 | sector | contratos | valor | entidades | pct_directa | pct_valor |
 |---|---|---|---|---|---|
-| Defensa | 97.628 | $692,9 billones | 71 | 75,4 % | 69,7 % |
-| Transporte | 79.324 | $62,1 billones | 19 | 84,9 % | 6,2 % |
-| No aplica/No pertenece | 107.229 | $36,6 billones | 36 | 84,7 % | 3,7 % |
-| Salud y Protección Social | 247.486 | $25,5 billones | 26 | 28,7 % | 2,6 % |
-| Inclusión Social y Reconciliación | 124.816 | $21,6 billones | 9 | 93,1 % | 2,2 % |
-| Educación Nacional | 47.231 | $19,5 billones | 70 | 70,9 % | 2,0 % |
-| Ley de Justicia | 37.503 | $14,5 billones | 17 | 82,5 % | 1,5 % |
-| Servicio Público | 142.723 | $14,1 billones | 41 | 94,5 % | 1,4 % |
-| Minas y Energía | 31.217 | $12,3 billones | 9 | 85,8 % | 1,2 % |
-| Agricultura | 84.017 | $12,2 billones | 9 | 97,2 % | 1,2 % |
+| Transporte | 79.318 | $61,8 billones | 19 | 84,9 % | 17,5 % |
+| Defensa | 97.619 | $52,7 billones | 71 | 75,4 % | 14,9 % |
+| No aplica/No pertenece | 107.227 | $36,5 billones | 36 | 84,7 % | 10,4 % |
+| Salud y Protección Social | 247.478 | $25,2 billones | 26 | 28,7 % | 7,1 % |
+| Inclusión Social y Reconciliación | 124.816 | $21,6 billones | 9 | 93,1 % | 6,1 % |
+| Educación Nacional | 47.228 | $19,4 billones | 70 | 70,9 % | 5,5 % |
+| Ley de Justicia | 37.501 | $14,5 billones | 17 | 82,5 % | 4,1 % |
+| Servicio Público | 142.723 | $14,1 billones | 41 | 94,5 % | 4,0 % |
+| Minas y Energía | 31.217 | $12,3 billones | 9 | 85,8 % | 3,5 % |
+| Agricultura | 84.017 | $12,2 billones | 9 | 97,2 % | 3,5 % |
 
 ## Concentración de proveedores
 
@@ -84,7 +86,7 @@ Una señal **no** es evidencia de irregularidad: indica contratos que vale la pe
 
 | señal | contratos | porcentaje |
 |---|---|---|
-| valor_atipico | 10317 | 0,7 % |
+| valor_atipico | 10339 | 0,7 % |
 | pagado_supera_valor | 603 | 0,0 % |
 | adicion_mayor_50 | 77213 | 5,4 % |
 | inicio_antes_firma | 1271 | 0,1 % |

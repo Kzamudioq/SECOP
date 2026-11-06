@@ -3,6 +3,7 @@ Registros descargados,1451909,
 Duplicados de id_contrato eliminados,0,
 Contratos únicos analizados,1451909,
 "Valor del contrato vacío, ilegible o <= 0",14580,1.0
+"Valor implausible (error de digitación probable), excluido de los totales",38,0.0
 Fecha de firma vacía o fuera de rango,0,0.0
 Fecha de fin anterior a la de inicio,78,0.01
 Duración mayor a 10 años,373,0.03
