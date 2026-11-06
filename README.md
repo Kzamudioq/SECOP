@@ -14,6 +14,17 @@ Este proyecto analiza **todos los contratos de SECOP II** firmados desde 2021 po
 | **¿A quién se le contrata?** | Mayores proveedores (agrupados por documento), participación de pymes y concentración por entidad (**HHI**) |
 | **¿Qué merece una segunda mirada?** | Señales contrato por contrato: valor atípico, pagos por encima de lo pactado, adiciones mayores al 50 % del plazo, ejecución antes de la firma |
 
+## Hallazgos (datos al 4 de noviembre de 2026)
+
+- **1.437.291 contratos** de 446 entidades con sede en Bogotá, firmados entre enero de 2021 y noviembre de 2026. Suman **$352,9 billones** y el contrato mediano vale **$35 millones**.
+- **Contratación directa:** se usó en el **77 % de los contratos** y concentra el **45 % del valor**. El 89 % de los contratos son con personas naturales, casi todos de prestación de servicios.
+- **La Ley de Garantías se ve con claridad.** Durante las vedas de 2022 y 2026, la contratación directa pasa de cerca del 75 % de los contratos a cerca del 5 %. Justo antes, las entidades se adelantan:
+  - en los 30 días previos a la veda de 2022 se firmaron **1,8 veces** más contratos directos que en esos mismos días de otros años;
+  - en 2026 fueron **2,7 veces** más (126 mil contra 47 mil);
+  - antes de la veda territorial de 2023, las entidades territoriales firmaron **4,1 veces** más.
+- **Concentración:** 42 de 359 entidades tienen concentración **alta** de proveedores (HHI > 2.500). En algunas, un solo proveedor recibe más del 80 % del valor adjudicado a empresas.
+- **Calidad de SECOP:** 38 contratos tienen valores imposibles. Hay prestaciones de servicios con personas naturales por $577 billones a las que se les pagaron $22 millones. Juntos suman **$641 billones**, casi el doble del valor real del periodo. Sin este control, cualquier total publicado con estos datos sale inflado.
+
 El informe se regenera solo cada mes: [`salidas/informe.md`](salidas/informe.md), con las figuras en [`salidas/figuras/`](salidas/figuras) y todas las tablas en [`salidas/tablas/secop_resultados.xlsx`](salidas/tablas).
 
 <p align="center">
@@ -46,6 +57,7 @@ También se puede abrir el [cuaderno en Colab](notebooks/analisis_secop.ipynb), 
 - **Categorías unificadas.** `terminado` y `Terminado` cuentan como un solo estado; `defensa` y `Defensa`, como un solo sector.
 - **Ley de Garantías con grupo de control.** En enero siempre se firma mucho porque arranca la vigencia. Por eso los 30 días previos a cada veda se comparan con los mismos 30 días de los otros años. Las ventanas usadas son: presidencial 2022 (29 ene – 19 jun), territoriales 2023 (29 jun – 29 oct, solo entidades territoriales) y presidencial 2026.
 - **Concentración comparable.** El HHI se calcula por entidad sobre el valor adjudicado a personas jurídicas. Se incluyen solo entidades con 20 contratos o más. Los umbrales son 1.500 y 2.500.
+- **Valores implausibles.** Algunos contratos se marcan como errores de digitación y se excluyen de los totales: los de $10 billones o más, y los de personas naturales por $10 mil millones o más con menos del 1 % pagado. Siguen apareciendo en la tabla de señales.
 - **Atípicos robustos.** Un contrato se marca como atípico si su valor, en escala logarítmica, se aleja más de 3,5 desviaciones MAD de la mediana de contratos del mismo tipo y modalidad. Esa comparación exige al menos 30 contratos en el grupo. **Una señal no es una irregularidad.** Solo indica qué expediente revisar primero.
 - **Privacidad.** El dataset público incluye representantes legales, cuentas bancarias y supervisores. Esas columnas no se descargan. Las personas naturales aparecen enmascaradas (`Persona natural ···123`) en gráficas y tablas.
 
@@ -60,7 +72,7 @@ src/secop/
   informe.py     informe.md + Excel + CSV
   cli.py         python -m secop {descargar, analizar, todo}
 notebooks/analisis_secop.ipynb   recorrido comentado (Colab)
-tests/           10 pruebas sobre datos sintéticos con problemas sembrados
+tests/           11 pruebas sobre datos sintéticos con problemas sembrados
 .github/workflows/  pruebas en cada push · informe mensual automático
 ```
 
